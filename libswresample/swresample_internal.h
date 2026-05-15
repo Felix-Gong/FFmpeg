@@ -228,5 +228,9 @@ void swri_audio_convert_init_x86(struct AudioConvert *ac,
                                  enum AVSampleFormat out_fmt,
                                  enum AVSampleFormat in_fmt,
                                  int channels);
+void swri_audio_convert_init_riscv(struct AudioConvert *ac,
+                                 enum AVSampleFormat out_fmt,
+                                 enum AVSampleFormat in_fmt,
+                                 int channels);
 
 #endif

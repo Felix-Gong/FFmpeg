@@ -182,6 +182,8 @@ AudioConvert *swri_audio_convert_alloc(enum AVSampleFormat out_fmt,
     swri_audio_convert_init_arm(ctx, out_fmt, in_fmt, channels);
 #elif ARCH_AARCH64
     swri_audio_convert_init_aarch64(ctx, out_fmt, in_fmt, channels);
+#elif ARCH_RISCV
+    swri_audio_convert_init_riscv(ctx, out_fmt, in_fmt, channels);
 #endif
 
     return ctx;
